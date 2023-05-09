@@ -1,0 +1,162 @@
+:root {
+    --clr-accent: #f6f6eb;
+    --clr-dark: #11284b;
+    --clr-black: #4b4b4e;
+    --clr-pale: #fedb62;
+    --clr-ternary: #fc6f6b;
+    --clr-blue: #381fd1;
+
+    --fs-400: 0.875rem;
+    --fs-500: 1.07rem;
+
+    --fs-800:3rem;
+    --fs-900: 3.75rem;
+    --fs-serif: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+*,
+*::after,
+**::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--clr-accent);
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Utility card */
+
+.container {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 65rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.serif {
+    font-family: var(--fs-serif);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap);
+}
+.place-center{
+    place-items: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.text-pure {
+    color: var(--clr-accent);
+}
+
+.bg-blue {
+    background: var(--clr-blue);
+}
+
+.text-blue {
+    color: var(--clr-blue);
+}
+.text-gray{
+    color: var(--clr-black);
+    opacity: .8;
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+
+.fs-800 {
+    font-size: var(--fs-800);
+}
+.fs-900 {
+    font-size: var(--fs-900);
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.btn {
+    padding: .4rem 1rem;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+    font-size: var(--fs-400);
+    font-weight: var(--wt, 700);
+    color: var(--clr-dark);
+    letter-spacing: .8px;
+}
+
+.btn-sec {
+    background: var(--clr-blue);
+    color: var(--clr-accent);
+}
+.btn-pri{
+    border-color: var(--clr-dark);
+}
+
+
+header{
+    margin-bottom: 2rem;
+}
+.logo img{
+    filter: invert(15%) sepia(97%) saturate(3676%) hue-rotate(249deg) brightness(83%) contrast(112%);
+}
+.denoter{
+    font-family: var(--fs-serif);
+    font-size: var(--fs-400);
+    font-weight: 700;
+    color: var(--clr-blue);
+    text-transform: uppercase;
+}
