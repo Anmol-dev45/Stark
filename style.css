@@ -6,6 +6,7 @@
     --clr-ternary: #fc6f6b;
     --clr-blue: #381fd1;
 
+    --fs-300: 0.85rem;
     --fs-400: 0.875rem;
     --fs-500: 1.07rem;
 
@@ -58,7 +59,9 @@ img{
     display: flex;
     gap: var(--gap);
 }
-
+.flex-1{
+    flex: 1;
+}
 .item-center {
     align-items: center;
 }
@@ -79,6 +82,9 @@ img{
     place-items: center;
 }
 
+.absolute{
+    position: absolute;
+}
 .uppercase {
     text-transform: uppercase;
 }
@@ -148,7 +154,15 @@ img{
 
 
 header{
-    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+main{
+    padding-bottom: 5rem;
+
+}
+section{
+    margin-top: 10rem;
 }
 .logo img{
     filter: invert(15%) sepia(97%) saturate(3676%) hue-rotate(249deg) brightness(83%) contrast(112%);
@@ -159,4 +173,40 @@ header{
     font-weight: 700;
     color: var(--clr-blue);
     text-transform: uppercase;
+}
+.app-container{
+    display: flex;
+    /* gap: 2; */
+    border-radius: 50px;
+    border: 2px solid var(--clr-dark);
+}
+.app{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: .7rem 2.7rem;
+    border: none;
+    border-radius: 99px;
+    transition: all .2s ease-in-out;
+}
+.app:hover{
+    background: var(--clr-dark);
+}
+.app > div{
+    display: flex;
+    align-items: center;
+}
+.app  img{
+    height: 16px;
+}
+.app > p {
+    color: var(--clr-black);
+    opacity: .9;
+    font-weight: 700;
+    font-family: var(--fs-serif);
+    font-size: var(--fs-300);
+    transition: all .2s ease-in-out;
+}
+.app:hover p{
+    color: var(--clr-accent);
 }
